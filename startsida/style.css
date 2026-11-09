@@ -1,3 +1,24 @@
 body {
     background-image: url("/assets/images/bricks.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    background-color: #bf694d;
+    margin: 0;
+}
+
+header {
+    background-image: url("/assets/images/roof.jpg");
+    background-color: #ffdab0;
+    padding-top: 10em;
+    background-position: center bottom;
+    background-size: cover;
+
+    text-align: center;
+    color: white;
+}
+
+@media (max-width: 786px) {
+    header {
+        padding-top: 10em;
+    }
 }
