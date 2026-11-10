@@ -1,31 +1,5 @@
 
-body {
-    background-image: url("/assets/images/bricks.jpg");
-    background-size: cover;
-    background-attachment: fixed;
-    background-color: #bf694d;
-    margin: 0;
-}
 
-header {
-    background-color: black;
-    color: white;
-    margin: 0;
-    padding: 0 10vw;
-}
-h1 {
-    text-align: center;
-    font-size: 15vw;
-    margin: 0;
-}
-
-/*main*/
-main{
-    background-color: darkgrey;
-    margin-left: 10vw;
-    margin-right: 10vw;
-    
-}
 details {
     margin: 1%;
 }
@@ -37,18 +11,4 @@ main ul {
 main ul li{
     background-color: grey;
     margin-top: 5px;
-}
-
-/*footer*/
-footer{
-    background: black;
-    color: white;
-    padding: 100px;
-}
-
-footer ul{
-    padding: 0;
-    display: flex;
-    justify-content: space-around;
-    list-style-type: none;
 }
