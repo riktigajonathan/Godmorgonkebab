@@ -77,9 +77,6 @@ footer p {
     min-height: 100vh;
     margin: 0 80px;
     padding: 0 40px;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
 
     flex:100%;
 
