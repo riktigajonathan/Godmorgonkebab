@@ -81,6 +81,8 @@ footer p {
     flex-direction: row;
     flex-wrap: wrap;
 
+    flex:100%;
+
     color: #ffffff;
 }
 
