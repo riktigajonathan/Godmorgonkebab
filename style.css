@@ -64,7 +64,7 @@ footer p {
     background-size: cover;
     background-attachment: fixed;
     background-position: center bottom;
-    background-color: #bf694d;
+    background-color: #1e1e1e;
 
     box-shadow: var(--default-shadow);
     clip-path: inset(0 -30px 0 -30px);
