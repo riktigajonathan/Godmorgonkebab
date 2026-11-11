@@ -1,7 +1,42 @@
 /* Importerar css koden från gemensamma css filen i parent folder */
 @import url('../style.css');
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+main {
+    
+}
+
+
+.pizzas {
+    background-image: url('../assets/images/facade.jpg');
+    width: 200px;
+    height: 200px;
+}
+
+
+
+
+
 details {
+    width: 20px;
+    height: 20px;
     margin: 1%;
 }
 main ul {
