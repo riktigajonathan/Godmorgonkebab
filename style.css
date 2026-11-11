@@ -1,5 +1,33 @@
 :root{
     --default-shadow: 0 0 10px 10px rgb(0 0 0 / 0.63);
+
+    /* FÄRGER FRÅN FÄRGSCHEMA */
+    --darkest-red: #a20501;
+    --darker-red: #f60c06;
+    --red: #FF4843;
+    --lighter-red: #fd7571;
+    --lightest-red: #fdb3b1;
+
+    --darkest-blue: #0d246d;
+    --darker-blue: #1739a7;
+    --blue: #405cb9;
+    --lighter-blue: #6b83d2;
+    --lightest-blue: #adbcec;
+
+    --darkest-yellow: #a2a001;
+    --darker-yellow: #f6f306;
+    --yellow: #fdfb43;
+    --lighter-yellow: #fdfb71;
+    --lightest-yellow: #fdfcb1;
+}
+
+@font-face {
+    font-family: 'Carter One';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url('assets/CarterOne.woff2') format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
 
 @font-face {
