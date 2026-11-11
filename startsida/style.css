@@ -1,10 +1,41 @@
 /* Importerar css koden från gemensamma css filen i parent folder */
 @import url('../style.css');
 
-h1 {
+.menu-section h1 {
+    background-color: rgb(64 93 186);
+    border-radius: 15px;
     text-align: center;
 }
 
-.menus {
-    background-color: #1e1e1e;
+.menu-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    min-height: 20em;
+
+    border: 6px solid #6C84D3;
+    border-radius: 15px;
+}
+
+.menu-container a {
+    color: white;
+    flex:1;
+    height: auto;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    z-index: -1;
+
+    font-size: 1.6rem;
+    text-align: center;
+    align-content: flex-end;
+    text-shadow:
+            -2px -2px 0 #000,
+            2px -2px 0 #000,
+            -2px 2px 0 #000,
+            2px 2px 0 #000,
+            -3px 0 0 #000,
+            3px 0 0 #000,
+            0 -3px 0 #000,
+            0 3px 0 #000;
 }
