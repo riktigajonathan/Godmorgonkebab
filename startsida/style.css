@@ -14,7 +14,6 @@
     min-height: 20em;
 
     border: 6px solid #6C84D3;
-    border-radius: 15px;
 }
 
 .menu-container a {
@@ -24,7 +23,6 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    z-index: -1;
 
     font-size: 1.6rem;
     text-align: center;
