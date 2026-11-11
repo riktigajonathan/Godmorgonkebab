@@ -1,33 +1,18 @@
 /* Importerar css koden från gemensamma css filen i parent folder */
 @import url('../style.css');
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-main {
-    
+#ds {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
-
 
 .pizzas {
     background-image: url('../assets/images/facade.jpg');
     width: 200px;
     height: 200px;
+    display: flex;
+    align-items: end;
 }
 
 
