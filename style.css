@@ -1,5 +1,24 @@
 :root{
     --default-shadow: 0 0 10px 10px rgb(0 0 0 / 0.63);
+
+    /* FÄRGER FRÅN FÄRGSCHEMA */
+    --darkest-red: #a20501;
+    --darker-red: #f60c06;
+    --red: #FF4843;
+    --lighter-red: #fd7571;
+    --lightest-red: #fdb3b1;
+
+    --darkest-blue: #0d246d;
+    --darker-blue: #1739a7;
+    --blue: #405cb9;
+    --lighter-blue: #6b83d2;
+    --lightest-blue: #adbcec;
+
+    --darkest-yellow: #a2a001;
+    --darker-yellow: #f6f306;
+    --yellow: #fdfb43;
+    --lighter-yellow: #fdfb71;
+    --lightest-yellow: #fdfcb1;
 }
 
 @font-face {
