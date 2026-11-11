@@ -62,7 +62,7 @@ footer p {
     flex-wrap: wrap;
 }
 
-.floor {
+main {
     background-image: url("/assets/images/floor.jpg");
     background-size: cover;
     background-attachment: fixed;
@@ -80,14 +80,6 @@ footer p {
     flex:100%;
 
     color: #ffffff;
-}
-
-main {
-    flex: 1;
-}
-
-aside {
-    flex: 2;
 }
 
 @media (max-width: 786px) {
