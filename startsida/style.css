@@ -37,3 +37,13 @@
             0 -3px 0 #000,
             0 3px 0 #000;
 }
+
+@media (max-width: 786px) {
+    .menu-container {
+        flex-wrap: wrap;
+    }
+
+    .menu-container a {
+        min-width: 266px;
+    }
+}
