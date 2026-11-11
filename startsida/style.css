@@ -13,7 +13,7 @@
     justify-content: space-around;
     min-height: 20em;
 
-    border: 6px solid #6C84D3;
+    border: 8px solid #6C84D3;
 }
 
 .menu-container a {
@@ -24,7 +24,7 @@
     background-size: cover;
     background-position: center;
 
-    font-size: 1.6rem;
+    font-size: 2.2rem;
     text-align: center;
     align-content: flex-end;
     text-shadow:
