@@ -8,15 +8,16 @@
 /* NAVBAR */
 
 nav {
-    flex: 50%;
-    margin-top: -48px;
+    flex: 100%;
+    margin-top: -66px;
 }
 
 ul {
+    display: flex;
+    justify-content: flex-end;
     list-style-type: none;
     margin: 0;
     padding: 0;
-    overflow: hidden;
 }
 
 ul li {
@@ -28,11 +29,22 @@ ul li a {
     color: white;
     text-align: center;
     padding: 12px;
+
     text-decoration: none;
+    font-size: 1.7rem;
+    text-shadow: 2px 2px 0 var(--darkest-red);
+    background-color: rgb(19 24 28 / 0.51);
 }
 
-ul li a:hover {
-    background-color: #111111;
+ul li a:hover, ul li a:focus {
+    mix-blend-mode: lighten;
+    background-color: rgb(162 5 1 / 0.46);
+}
+
+.vl {
+    border-right: 3px solid var(--lightest-red);
+    height: 46px;
+    margin-top: -56px;
 }
 
 /* MENY-SEKTION */
@@ -72,31 +84,31 @@ ul li a:hover {
             3px 0 0 #000,
             0 -3px 0 #000,
             0 3px 0 #000;
-    
-    transition: 
-        transform var(--animation-time) ease-out, 
-        box-shadow var(--animation-time) ease-out, 
-        outline var(--animation-time) ease-out, 
+
+    transition:
+        transform var(--animation-time) ease-out,
+        box-shadow var(--animation-time) ease-out,
+        outline var(--animation-time) ease-out,
         filter var(--animation-time) ease-out;
-    
+
     outline: 5px solid transparent;
 }
 
-.menu-container a:hover {
+.menu-container a:hover, .menu-container a:focus {
     z-index: 1;
 
-    transition: 
-        transform var(--animation-time) ease-in-out, 
-        box-shadow var(--animation-time) ease-in-out, 
-        outline var(--animation-time) ease-in-out, 
+    transition:
+        transform var(--animation-time) ease-in-out,
+        box-shadow var(--animation-time) ease-in-out,
+        outline var(--animation-time) ease-in-out,
         filter var(--animation-time) ease-in-out;
-    
+
     transform: scale(1.1);
     outline: 5px solid var(--lighter-yellow);
     box-shadow: var(--default-shadow);
 }
 
-.menu-container:hover a:not(:hover) {
+.menu-container:hover a:not(:hover), .menu-container:focus a:not(:focus) {
     filter: brightness(0.7);
 }
 
