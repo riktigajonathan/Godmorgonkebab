@@ -34,11 +34,16 @@ ul li a {
     font-size: 1.7rem;
     text-shadow: 2px 2px 0 var(--darkest-red);
     background-color: rgb(19 24 28 / 0.51);
+
+    mix-blend-mode: lighten;
+}
+
+.current {
+    background-color: rgb(61 33 33);
 }
 
 ul li a:hover, ul li a:focus {
-    mix-blend-mode: lighten;
-    background-color: rgb(162 5 1 / 0.46);
+    background-color: rgb(196 19 16 / 0.46);
 }
 
 .vl {
