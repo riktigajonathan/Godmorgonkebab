@@ -108,7 +108,7 @@ ul li a:hover, ul li a:focus {
     box-shadow: var(--default-shadow);
 }
 
-.menu-container:hover a:not(:hover), .menu-container:focus a:not(:focus) {
+.menu-container:hover a:not(:hover), .menu-container:focus-within a:not(:focus) {
     filter: brightness(0.7);
 }
 
