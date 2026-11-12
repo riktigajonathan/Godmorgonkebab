@@ -1,6 +1,10 @@
 /* Importerar css koden från gemensamma css filen i parent folder */
 @import url('../style.css');
 
+:root {
+    --animation-time: 0.2s;
+}
+
 .menu-section h1 {
     background-color: var(--blue);
     border-radius: 15px;
@@ -17,7 +21,7 @@
 }
 
 .menu-container a {
-    transition: transform 0.2s ease-out, box-shadow 0.2s ease-out, outline 0.2s ease-out, filter 0.2s ease-out;
+    transition: transform var(--animation-time) ease-out, box-shadow var(--animation-time) ease-out, outline var(--animation-time) ease-out, filter var(--animation-time) ease-out;
     color: white;
     flex:1;
     height: auto;
@@ -42,7 +46,7 @@
 }
 
 .menu-container a:hover {
-    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out, outline 0.2s ease-in-out, filter 0.2s ease-in-out;
+    transition: transform var(--animation-time) ease-in-out, box-shadow var(--animation-time) ease-in-out, outline var(--animation-time) ease-in-out, filter var(--animation-time) ease-in-out;
     transform: scale(1.1);
     outline: 5px solid var(--lighter-yellow);
     box-shadow: var(--default-shadow);
