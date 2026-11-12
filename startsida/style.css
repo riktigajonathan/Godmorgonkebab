@@ -13,7 +13,7 @@
     justify-content: space-around;
     min-height: 20em;
 
-    border: 8px solid var(--lighter-blue);;
+    border: 8px solid var(--lighter-blue);
 }
 
 .menu-container a {
