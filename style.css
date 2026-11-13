@@ -155,7 +155,7 @@ ul li a {
     mix-blend-mode: lighten;
 }
 
-.current {
+.active {
     background-color: rgb(61 33 33);
 }
 
