@@ -19,6 +19,8 @@
     --yellow: #fdfb43;
     --lighter-yellow: #fdfb71;
     --lightest-yellow: #fdfcb1;
+
+    --nav-opacity: 1
 }
 
 @font-face {
@@ -126,23 +128,25 @@ main {
 
 nav {
     flex: 100%;
-    margin-top: -67px;
 }
 
-ul {
+nav ul {
     display: flex;
     justify-content: flex-end;
     list-style-type: none;
     margin: 0;
     padding: 0;
+
+    flex-wrap: wrap;
 }
 
-ul li {
-    float: right;
+nav ul li {
+    flex: 100%;
 }
 
-ul li a {
+nav ul li a {
     display: block;
+
     color: white;
     text-align: center;
     padding: 12px;
@@ -150,21 +154,45 @@ ul li a {
     text-decoration: none;
     font-size: 1.7rem;
     text-shadow: 2px 2px 0 var(--darkest-red);
-    background-color: rgb(19 24 28 / 0.51);
+    background-color: rgba(106 49 49 / var(--nav-opacity));
 
-    mix-blend-mode: lighten;
+    mix-blend-mode: normal;
 }
 
 .active {
     background-color: rgb(61 33 33);
 }
 
-ul li a:hover, ul li a:focus {
-    background-color: rgb(196 19 16 / 0.46);
+nav ul li a:hover, nav ul li a:focus {
+    background-color: rgb(196 19 16 / var(--nav-opacity));
 }
 
 .vl {
     border-right: 3px solid var(--lightest-red);
     height: 46px;
     margin-top: -56px;
+}
+
+@media (min-width: 1045px) {
+    root {
+        --nav-opacity: 0.5;
+    }
+
+    nav ul {
+        flex-wrap: wrap;
+    }
+
+    nav ul li {
+        flex: none;
+        float: right;
+    }
+
+    nav ul li a {
+        mix-blend-mode: lighten;
+        background-color: transparent;
+    }
+
+    nav {
+        margin-top: -67px;
+    }
 }
