@@ -1,5 +1,15 @@
 :root{
     --default-shadow: 0 0 10px 10px rgb(0 0 0 / 0.63);
+    --default-outline:
+        -2px -2px 0 #000,
+        2px -2px 0 #000,
+        -2px 2px 0 #000,
+        2px 2px 0 #000,
+        -3px 0 0 #000,
+        3px 0 0 #000,
+        0 -3px 0 #000,
+        0 3px 0 #000;
+    --nav-opacity: 1;
 
     /* FÄRGER FRÅN FÄRGSCHEMA */
     --darkest-red: #a20501;
@@ -19,8 +29,6 @@
     --yellow: #fdfb43;
     --lighter-yellow: #fdfb71;
     --lightest-yellow: #fdfcb1;
-
-    --nav-opacity: 1
 }
 
 @font-face {
@@ -173,6 +181,7 @@ nav ul li a:hover, nav ul li a:focus {
     border-right: 3px solid var(--lightest-red);
     height: 46px;
     margin-top: -56px;
+    margin-right: -1.5px;
 }
 
 @media screen and (min-width: 1045px) {
@@ -204,4 +213,15 @@ nav ul li a:hover, nav ul li a:focus {
     .vl {
         display: block;
     }
+}
+
+.btn {
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: var(--blue);
+    color: white;
+    text-decoration: none;
+    border-radius: 12px;
+    box-shadow: 5px 5px 4px var(--darkest-blue);
+    text-shadow: 2px 2px 0 var(--darkest-blue);
 }
