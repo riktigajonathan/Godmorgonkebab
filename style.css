@@ -152,9 +152,10 @@ nav ul li a {
     padding: 12px;
 
     text-decoration: none;
-    font-size: 1.7rem;
+    font-size: 1.3rem;
     text-shadow: 2px 2px 0 var(--darkest-red);
     background-color: rgba(106 49 49 / var(--nav-opacity));
+    box-shadow: 2px 2px 7px var(--lightest-red);
 
     mix-blend-mode: normal;
 }
@@ -168,6 +169,7 @@ nav ul li a:hover, nav ul li a:focus {
 }
 
 .vl {
+    display: none;
     border-right: 3px solid var(--lightest-red);
     height: 46px;
     margin-top: -56px;
@@ -190,9 +192,15 @@ nav ul li a:hover, nav ul li a:focus {
     nav ul li a {
         mix-blend-mode: lighten;
         background-color: transparent;
+        box-shadow: none;
+        font-size: 1.7rem;
     }
 
     nav {
         margin-top: -67px;
+    }
+
+    .vl {
+        display: block;
     }
 }
