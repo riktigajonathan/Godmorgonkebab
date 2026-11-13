@@ -1,30 +1,49 @@
 /* Importerar css koden från gemensamma css filen i parent folder */
 @import url('../style.css');
 
-#pizzas-container {
+details {
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    font-size: 1.5rem;
+    margin-top: 1rem;
+    height: auto;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     flex-wrap: wrap;
 }
 
-.pizzas {
+#pizzas{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+@media (min-width: 786px) {
+    #pizzas {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+@media (min-width: 1400px) {
+    #pizzas {
+        grid-template-columns: repeat(5, 1fr);
+    }
+}
+.mat{
     text-shadow: -2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000, 2px 2px 0 #000;
-    height: 25vh;
     display: flex;
     flex-direction: column;
     margin: auto;
+    background-color: black;
 }
-.pizzas-image {
+.pizza-image {
     width: 100%;
     height: 80%;
     object-fit: cover;
 }
-.pizzas p {
+.mat p {
     height: 20%;
     margin: 0;
-    background-color: black;
+
 }
-.pizzas:hover {
+.mat:hover {
     transform: scale(1.1);
     transition: transform 0.1s ease-in-out;
 }
