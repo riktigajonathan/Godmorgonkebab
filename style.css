@@ -175,14 +175,6 @@ nav ul li a:hover, nav ul li a:focus {
     margin-top: -56px;
 }
 
-.icon {
-    position: absolute;
-    background-image: url("assets/menu-hamburger.svg");
-    padding: 12px 12px;
-    background-size: cover;
-    background-position: center;
-}
-
 @media screen and (min-width: 1045px) {
     root {
         --nav-opacity: 0.5;
