@@ -5,9 +5,28 @@
     --animation-time: 0.2s;
 }
 
+main {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+h2 {
+    text-align: center;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+}
+
+aside {
+    flex: 50%;
+}
+
 #bestall-btn {
-    font-size: 1.5rem;
-    width: 70%;
+    font-size: 1.7rem;
+    width: 40%;
     text-align: center;
     align-self: center;
 }
