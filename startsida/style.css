@@ -21,7 +21,8 @@ h2, h3 {
     flex-wrap: wrap;
     gap: 20px;
     align-items: stretch;
-    margin: 20px;
+    margin-bottom: 20px;
+    margin-top: 40px;
 }
 
 .row h3 {
