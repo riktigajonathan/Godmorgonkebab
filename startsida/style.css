@@ -18,10 +18,24 @@ h2 {
 .row {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
+    align-items: stretch;
+    margin: 20px
 }
 
-aside {
-    flex: 50%;
+.row aside {
+    flex: 1;
+    min-width: 300px;
+    display: flex;
+    flex-direction: column;
+}
+
+.row aside iframe {
+    width: 100%;
+    height: 100%;
+    flex-grow: 1;
+    border: 0;
 }
 
 #bestall-btn {
