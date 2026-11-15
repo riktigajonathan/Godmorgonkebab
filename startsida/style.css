@@ -25,17 +25,22 @@ h2, h3 {
     margin-top: 40px;
 }
 
-.row h3 {
-    background-color: rgb(0 0 0 / 0.37);
-    border-radius: 15px;
-    padding: 6px 0;
-}
-
 .row aside {
     flex: 1;
     min-width: 300px;
     display: flex;
     flex-direction: column;
+}
+
+.row aside h3 {
+    background-color: rgb(0 0 0 / 0.37);
+    border-radius: 15px;
+    padding: 6px 0;
+    font-size: 1.7rem;
+}
+
+.row aside p {
+    font-size: 1.5rem;
 }
 
 .row aside iframe {
