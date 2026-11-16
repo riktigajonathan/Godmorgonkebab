@@ -70,7 +70,7 @@ header {
 }
 
 #logo {
-    padding: 10.5em;
+    padding: 10.5em 2em;
     margin: 0.5em auto;
     background-image: url("assets/images/logo_placeholder.png");
     background-size: contain;
@@ -141,10 +141,6 @@ main {
 }
 
 /* NAVBAR */
-
-nav {
-    flex: 100%;
-}
 
 nav ul {
     display: flex;
