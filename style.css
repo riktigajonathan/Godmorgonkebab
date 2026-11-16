@@ -142,6 +142,10 @@ main {
 
 /* NAVBAR */
 
+nav {
+    flex: 100%;
+}
+
 nav ul {
     display: flex;
     justify-content: flex-end;
@@ -191,6 +195,10 @@ nav ul li a:hover, nav ul li a:focus {
 @media screen and (min-width: 1045px) {
     root {
         --nav-opacity: 0.5;
+    }
+
+    nav {
+        flex: none;
     }
 
     nav ul {
