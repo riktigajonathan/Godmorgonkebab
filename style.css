@@ -129,9 +129,8 @@ main {
 }
 
 @media screen and (max-width: 786px) {
-    header img {
-        width: 14em;
-        padding: 0.5em;
+    #logo {
+        padding: 7em 2em;
     }
 
     main {
@@ -153,7 +152,7 @@ nav ul {
     margin: 0;
     padding: 0;
 
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
 }
 
 nav ul li {
@@ -192,7 +191,7 @@ nav ul li a:hover, nav ul li a:focus {
     margin-right: -1.5px;
 }
 
-@media screen and (min-width: 1045px) {
+@media screen and (min-width: 1052px) {
     root {
         --nav-opacity: 0.5;
     }
