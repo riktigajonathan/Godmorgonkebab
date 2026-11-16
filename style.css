@@ -9,6 +9,7 @@
         3px 0 0 #000,
         0 -3px 0 #000,
         0 3px 0 #000;
+    --animation-time: 0.2s;
     --nav-opacity: 1;
 
     /* FÄRGER FRÅN FÄRGSCHEMA */
@@ -213,15 +214,4 @@ nav ul li a:hover, nav ul li a:focus {
     .vl {
         display: block;
     }
-}
-
-.btn {
-    display: inline-block;
-    padding: 12px 24px;
-    background-color: var(--blue);
-    color: white;
-    text-decoration: none;
-    border-radius: 12px;
-    box-shadow: 5px 5px 0 var(--darkest-blue);
-    text-shadow: 2px 2px 0 var(--darkest-blue);
 }

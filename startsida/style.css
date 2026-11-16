@@ -1,10 +1,6 @@
 /* Importerar css koden från gemensamma css filen i parent folder */
 @import url('../style.css');
 
-:root {
-    --animation-time: 0.2s;
-}
-
 main {
     display: flex;
     flex-wrap: wrap;
@@ -122,4 +118,23 @@ h2, h3 {
     .menu-container a {
         min-width: 266px;
     }
+}
+
+.btn {
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: var(--blue);
+    color: white;
+    text-decoration: none;
+    border-radius: 12px;
+    box-shadow: 5px 5px 0 var(--darkest-blue);
+    text-shadow: 2px 2px 0 var(--darkest-blue);
+}
+
+.btn:hover, .btn:focus {
+    background-color: var(--darker-blue);
+}
+
+.btn:focus {
+    outline: 5px dotted var(--lightest-blue);
 }
