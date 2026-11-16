@@ -1,0 +1,37 @@
+/* Importerar css koden från gemensamma css filen i parent folder */
+@import url('../style.css');
+
+main {
+    padding-bottom: 20px;
+    text-align: center;
+}
+
+h1 {
+    background-color: var(--blue);
+    border-radius: 15px;
+    text-align: center;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+#columns {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+#column1 {
+
+}
+
+#column2 {
+
+}
+
+.photo {
+    width: 10rem;
+    height: 20rem;
+}
