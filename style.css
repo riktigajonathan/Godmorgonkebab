@@ -1,5 +1,16 @@
 :root{
     --default-shadow: 0 0 10px 10px rgb(0 0 0 / 0.63);
+    --default-outline:
+        -2px -2px 0 #000,
+        2px -2px 0 #000,
+        -2px 2px 0 #000,
+        2px 2px 0 #000,
+        -3px 0 0 #000,
+        3px 0 0 #000,
+        0 -3px 0 #000,
+        0 3px 0 #000;
+    --animation-time: 0.2s;
+    --nav-opacity: 1;
 
     /* FÄRGER FRÅN FÄRGSCHEMA */
     --darkest-red: #a20501;
@@ -110,7 +121,7 @@ main {
     color: #ffffff;
 }
 
-@media (max-width: 786px) {
+@media screen and (max-width: 786px) {
     header img {
         width: 14em;
         padding: 0.5em;
@@ -126,45 +137,81 @@ main {
 
 nav {
     flex: 100%;
-    margin-top: -67px;
 }
 
-ul {
+nav ul {
     display: flex;
     justify-content: flex-end;
     list-style-type: none;
     margin: 0;
     padding: 0;
+
+    flex-wrap: wrap;
 }
 
-ul li {
-    float: right;
+nav ul li {
+    flex: 100%;
 }
 
-ul li a {
+nav ul li a {
     display: block;
+
     color: white;
     text-align: center;
     padding: 12px;
 
     text-decoration: none;
-    font-size: 1.7rem;
+    font-size: 1.3rem;
     text-shadow: 2px 2px 0 var(--darkest-red);
-    background-color: rgb(19 24 28 / 0.51);
+    background-color: rgba(106 49 49 / var(--nav-opacity));
+    box-shadow: 2px 2px 7px var(--lightest-red);
 
-    mix-blend-mode: lighten;
+    mix-blend-mode: normal;
 }
 
-.current {
+.active {
     background-color: rgb(61 33 33);
 }
 
-ul li a:hover, ul li a:focus {
-    background-color: rgb(196 19 16 / 0.46);
+nav ul li a:hover, nav ul li a:focus {
+    background-color: rgb(196 19 16 / var(--nav-opacity));
 }
 
 .vl {
+    display: none;
     border-right: 3px solid var(--lightest-red);
     height: 46px;
     margin-top: -56px;
+    margin-right: -1.5px;
+}
+
+@media screen and (min-width: 1045px) {
+    root {
+        --nav-opacity: 0.5;
+    }
+
+    nav ul {
+        flex-wrap: wrap;
+    }
+
+    nav ul li {
+        display: block;
+        flex: none;
+        float: right;
+    }
+
+    nav ul li a {
+        mix-blend-mode: lighten;
+        background-color: transparent;
+        box-shadow: none;
+        font-size: 1.7rem;
+    }
+
+    nav {
+        margin-top: -67px;
+    }
+
+    .vl {
+        display: block;
+    }
 }
