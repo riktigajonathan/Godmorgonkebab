@@ -52,6 +52,7 @@ body {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    justify-content: flex-end;
 
     font-family: "Carter One", system-ui;
 }
@@ -68,9 +69,15 @@ header {
     flex: 100%;
 }
 
-header img {
-    width: 21em;
-    padding: 0.5em;
+#logo {
+    padding: 10.5em 2em;
+    margin: 0.5em auto;
+    background-image: url("assets/images/logo_placeholder.png");
+    background-size: contain;
+    display: block;
+    max-width: 21em;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 footer {
@@ -122,9 +129,8 @@ main {
 }
 
 @media screen and (max-width: 786px) {
-    header img {
-        width: 14em;
-        padding: 0.5em;
+    #logo {
+        padding: 7em 2em;
     }
 
     main {
@@ -146,7 +152,7 @@ nav ul {
     margin: 0;
     padding: 0;
 
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
 }
 
 nav ul li {
@@ -185,9 +191,13 @@ nav ul li a:hover, nav ul li a:focus {
     margin-right: -1.5px;
 }
 
-@media screen and (min-width: 1045px) {
+@media screen and (min-width: 1052px) {
     root {
         --nav-opacity: 0.5;
+    }
+
+    nav {
+        flex: none;
     }
 
     nav ul {
