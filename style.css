@@ -52,6 +52,7 @@ body {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    justify-content: flex-end;
 
     font-family: "Carter One", system-ui;
 }
@@ -68,9 +69,15 @@ header {
     flex: 100%;
 }
 
-header img {
-    width: 21em;
-    padding: 0.5em;
+#logo {
+    padding: 10.5em;
+    margin: 0.5em auto;
+    background-image: url("assets/images/logo_placeholder.png");
+    background-size: contain;
+    display: block;
+    max-width: 21em;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 footer {
