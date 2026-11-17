@@ -18,13 +18,14 @@ main {
     flex-wrap: wrap;
 }
 
-#columns {
+#introduction {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
 }
 
 @media (max-width: 1000px) {
-    #columns {
+    #introduction {
         grid-template-columns: 1fr;
     }
 }
@@ -37,28 +38,34 @@ main {
     float: left;
 }
 
-
 #column2 {
-    text-align: right;
+    text-align: left;
 }
 
-#column img {
+#column2 img {
     float: right;
 }
 
 
+
 #butiken {
+    gap: 20px;
+}
+
+#butiken-columns {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
 
 }
 
 #butiken #restaurant-image {
     float: left;
-
 }
 
 
 
 .photo {
     height: 20rem;
-    
+    max-width: 100%;
+    object-fit: cover;
 }
