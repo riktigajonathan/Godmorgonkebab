@@ -15,11 +15,11 @@ button {
     font-size: 1.1rem;
 }
 
-.button:hover, .button:focus {
+button:hover, button:focus {
     filter: brightness(120%);
 }
 
-.button:active {
+button:active {
     filter: brightness(100%);
 }
 
