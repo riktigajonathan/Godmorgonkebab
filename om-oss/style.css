@@ -6,7 +6,7 @@ main {
     text-align: center;
 }
 
-h1 {
+#header {
     background-color: var(--blue);
     border-radius: 15px;
     text-align: center;
@@ -18,14 +18,20 @@ main {
     flex-wrap: wrap;
 }
 
-#introduction {
+#introduction-header {
+    border: 8px solid var(--yellow);
+    text-shadow: 2px 2px 0 var(--darkest-red);
+}
+
+#introduction-columns {
+    margin-bottom: 20px;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 20px;
 }
 
 @media (max-width: 1000px) {
-    #introduction {
+    #introduction-columns {
         grid-template-columns: 1fr;
     }
 }
@@ -53,13 +59,14 @@ main {
 }
 
 #butiken-columns {
+    margin-bottom: 20px;
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
 }
 
 #butiken #restaurant-image {
-    float: left;
+    
 }
 
 
