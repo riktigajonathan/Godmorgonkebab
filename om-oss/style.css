@@ -40,11 +40,23 @@ main {
 
 #column2 {
     text-align: right;
-    float: right;
-    display: flex;
-
-    
 }
+
+#column img {
+    float: right;
+}
+
+
+#butiken {
+
+}
+
+#butiken #restaurant-image {
+    float: left;
+
+}
+
+
 
 .photo {
     height: 20rem;
