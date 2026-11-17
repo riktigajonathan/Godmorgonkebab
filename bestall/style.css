@@ -46,7 +46,6 @@ h2 {
     border-radius: 12px;
     box-shadow: 5px 5px 0 var(--darkest-blue);
     text-shadow: 2px 2px 0 var(--darkest-blue);
-    flex: 50%;
     text-align: center;
 }
 
@@ -60,6 +59,12 @@ h2 {
 
 .button-container {
     display: flex;
-    justify-content: space-between;
-    gap: 40px
+    justify-content: center;
+    gap: 40px;
+}
+
+@media screen and (max-width: 786px) {
+    .button-container {
+        gap: 10px;
+    }
 }
