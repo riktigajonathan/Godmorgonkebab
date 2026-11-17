@@ -1,2 +1,22 @@
 /* Importerar css koden från gemensamma css filen i parent folder */
 @import url('../style.css');
+
+.btn {
+    font-family: "Carter One", system-ui;
+    display: inline-block;
+    padding: 12px 24px;
+    background-image: linear-gradient(0, var(--blue), var(--lighter-blue));
+    color: white;
+    text-decoration: none;
+    box-shadow: 5px 5px 5px rgb(0 0 0 / 0.45);
+    text-shadow: 2px 2px 0 var(--darker-blue);
+    border: 2px solid var(--lightest-blue);
+}
+
+.btn:hover, .btn:focus {
+    filter: brightness(120%);
+}
+
+.btn:active {
+    filter: brightness(100%);
+}
