@@ -1,7 +1,7 @@
 /* Importerar css koden från gemensamma css filen i parent folder */
 @import url('../style.css');
 
-.btn {
+button {
     font-family: "Carter One", system-ui;
     display: inline-block;
     padding: 12px 24px;
@@ -15,11 +15,11 @@
     font-size: 1.1rem;
 }
 
-.btn:hover, .btn:focus {
+.button:hover, .button:focus {
     filter: brightness(120%);
 }
 
-.btn:active {
+.button:active {
     filter: brightness(100%);
 }
 
@@ -27,4 +27,39 @@ h1 {
     background-color: var(--blue);
     border-radius: 15px;
     text-align: center;
+}
+
+h2 {
+    background-color: rgb(0 0 0 / 0.37);
+    border-radius: 15px;
+    padding: 6px 0;
+    font-size: 1.7rem;
+    text-align: center;
+}
+
+.btn {
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: var(--blue);
+    color: white;
+    text-decoration: none;
+    border-radius: 12px;
+    box-shadow: 5px 5px 0 var(--darkest-blue);
+    text-shadow: 2px 2px 0 var(--darkest-blue);
+    flex: 50%;
+    text-align: center;
+}
+
+.btn:hover, .btn:focus {
+    background-color: var(--darker-blue);
+}
+
+.btn:focus {
+    outline: 5px dotted var(--lightest-blue);
+}
+
+.button-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px
 }
