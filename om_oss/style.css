@@ -23,15 +23,30 @@ main {
     grid-template-columns: repeat(2, 1fr);
 }
 
-#column1 {
-
+@media (max-width: 1000px) {
+    #columns {
+        grid-template-columns: 1fr;
+    }
 }
 
-#column2 {
+#column1 {
+    text-align: left;
+}
 
+#column1 img {
+    float: left;
+}
+
+
+#column2 {
+    text-align: right;
+    float: right;
+    display: flex;
+
+    
 }
 
 .photo {
-    width: 10rem;
     height: 20rem;
+    
 }
