@@ -12,6 +12,7 @@
     box-shadow: 5px 5px 5px rgb(0 0 0 / 0.45);
     text-shadow: 2px 2px 0 var(--darker-blue);
     border: 2px solid var(--lightest-blue);
+    font-size: 1.1rem;
 }
 
 .btn:hover, .btn:focus {
@@ -20,4 +21,10 @@
 
 .btn:active {
     filter: brightness(100%);
+}
+
+h1 {
+    background-color: var(--blue);
+    border-radius: 15px;
+    text-align: center;
 }
