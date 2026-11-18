@@ -93,7 +93,6 @@ hr {
 .topping-column,
 .sauce-column {
 	flex: 1;
-	min-width: 200px;
 	display: flex;
 	flex-direction: column;
 	gap: 8px;
@@ -137,7 +136,7 @@ hr {
 	pointer-events: none;
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 786px) {
 	.pizza-builder {
 		flex-direction: column;
 		align-items: center;
