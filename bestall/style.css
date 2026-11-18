@@ -83,11 +83,12 @@ hr {
 }
 
 .pizza-builder aside {
-    flex: 1;
+    flex: 5;
     min-width: 300px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    gap: 2px;
 }
 
 .pizza-builder aside h4 {
@@ -95,6 +96,7 @@ hr {
     border-radius: 15px;
     padding: 6px 0;
     flex: 100%;
+    text-align: center;
 }
 
 #pizza {
@@ -102,4 +104,5 @@ hr {
     height: 100%;
     flex-grow: 1;
     border: 0;
+    flex: 3;
 }
