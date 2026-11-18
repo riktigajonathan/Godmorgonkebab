@@ -6,7 +6,7 @@ main {
     text-align: center;
 }
 
-#header {
+h1 {
     background-color: var(--blue);
     border-radius: 15px;
     text-align: center;
@@ -18,7 +18,7 @@ main {
     flex-wrap: wrap;
 }
 
-#introduction-header {
+#introduction-rubrik {
     border: 8px solid var(--yellow);
     text-shadow: 2px 2px 0 var(--darkest-red);
 }
@@ -64,6 +64,11 @@ main {
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
 }
+
+#butiken-column3 .photo{
+    backrgound-position: center;
+}
+
 
 #butiken #restaurant-image {
     
