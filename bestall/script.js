@@ -40,5 +40,10 @@ function btnAction(event) {
         if (existingImg) {
             existingImg.remove();
         }
+
+        // this doesnt work
+        toppings.remove(topping);
     }
+
+    document.getElementById("price").textContent = "Pris: " + (Object.keys(toppings).length*8 + 100) + "kr"
 }
