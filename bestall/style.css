@@ -5,7 +5,7 @@ button {
 	font-family: "Carter One", system-ui;
 	display: inline-block;
 	padding: 12px 24px;
-	background-image: linear-gradient(0, var(--blue), var(--lighter-blue));
+	background-image: linear-gradient(to top, var(--blue), var(--lighter-blue));
 	color: white;
 	text-decoration: none;
 	border-radius: 5px;

@@ -17,7 +17,7 @@ function btnAction(event) {
     toppings[topping] = !toppings[topping];
 
     if (toppings[topping]) {
-        btn.style.filter = "brightness(0.5)";
+        btn.style.filter = "brightness(0.8)";
 
         const img = document.createElement("img");
 
