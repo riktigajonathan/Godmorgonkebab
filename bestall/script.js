@@ -6,7 +6,7 @@ const toppings = {};
 
 function btnAction(event) {
     const btn = event.target;
-    const topping = btn.innerText
+    const topping = btn.textContent
         .toLowerCase()
         .split(' ')[0]
         .trim()
@@ -27,7 +27,7 @@ function btnAction(event) {
 
         if (topping === "ost") {
             img.style.zIndex = -1;
-        } 
+        }
         else if (topping.endsWith("sas") || topping.endsWith("dressing")) {
             img.style.zIndex = 2;
         }
