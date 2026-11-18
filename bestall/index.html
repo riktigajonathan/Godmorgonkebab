@@ -52,35 +52,40 @@
 			<h2>Välkommen till pizzabyggaren!</h2>
 			<h3>Tryck på knapparna nedan för att skapa din egna pizza.</h3>
 
-			<section class="pizza-builder">
-				<aside>
-					<h4>Toppings</h4>
-					<button type="button">Ananas</button>
-					<button type="button">Bacon</button>
-					<button type="button">Champinjoner</button>
-					<button type="button">Korv</button>
-					<button type="button">Oliver</button>
-					<button type="button">Ost</button>
-					<button type="button">Paprika</button>
-					<button type="button">Pepperoni</button>
-					<button type="button">Skinka</button>
-					<button type="button">Tomat</button>
-					<h4>Såser</h4>
-					<button type="button">Tomatsås</button>
-					<button type="button">Barbecuesås</button>
-					<button type="button">Vitlökssås</button>
-					<button type="button">Ranchdressing</button>
-					<button type="button">Chilisås</button>
-				</aside>
-				<aside id="pizza">
-					<script src="script.js"></script>
-					<img
-						src="/assets/images/toppings/bas.png"
-						alt="Pizza Base"
-						style="z-index: -2;"
-					/>
-				</aside>
-			</section>
+            <section class="pizza-builder">
+                <div class="topping-column">
+                    <h4>Toppings</h4>
+                    <button type="button">Ananas</button>
+                    <button type="button">Bacon</button>
+                    <button type="button">Champinjoner</button>
+                    <button type="button">Korv</button>
+                    <button type="button">Oliver</button>
+                    <button type="button">Ost</button>
+                    <button type="button">Paprika</button>
+                    <button type="button">Pepperoni</button>
+                    <button type="button">Skinka</button>
+                    <button type="button">Tomat</button>
+                </div>
+                
+                <div class="sauce-column">
+                    <h4>Såser</h4>
+                    <button type="button">Tomatsås</button>
+                    <button type="button">Barbecuesås</button>
+                    <button type="button">Vitlökssås</button>
+                    <button type="button">Ranchdressing</button>
+                    <button type="button">Chilisås</button>
+                </div>
+
+                <div id="pizza">
+                    <script src="script.js"></script>
+                    <noscript></noscript>
+                    <img
+                        src="/assets/images/toppings/bas.png"
+                        alt="Pizza Base"
+                        style="z-index: -2;"
+                    />
+                </div>
+            </section>
 		</main>
 
 		<footer>
