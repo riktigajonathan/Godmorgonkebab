@@ -25,6 +25,10 @@ details {
     flex-wrap: wrap;
 }
 
+details:hover {
+    cursor: pointer;
+}
+
 summary {
     padding: 1rem;
 }
