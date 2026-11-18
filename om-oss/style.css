@@ -1,0 +1,92 @@
+/* Importerar css koden från gemensamma css filen i parent folder */
+@import url('../style.css');
+
+main {
+    padding-bottom: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+h1 {
+    background-color: var(--blue);
+    border-radius: 15px;
+    text-align: center;
+    margin-bottom: 0;
+}
+
+hr {
+    width: 100%;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+}
+
+#introduction-rubrik {
+    border: 8px solid var(--yellow);
+    text-shadow: 2px 2px 0 var(--darkest-red);
+}
+
+#introduction-columns {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+@media (max-width: 1000px) {
+    #introduction-columns {
+        grid-template-columns: 1fr;
+    }
+}
+
+#column1 {
+    text-align: left;
+}
+
+#column1 img {
+    float: left;
+}
+
+#column2 {
+    text-align: left;
+}
+
+#column2 img {
+    float: right;
+}
+
+
+
+#butiken {
+    gap: 20px;
+}
+
+#butiken-columns {
+    margin-bottom: 20px;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 20px;
+}
+
+@media (min-width: 786px) {
+    #butiken-columns {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media (min-width: 1100px) {
+    #butiken-columns {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+#butiken #restaurant-image {
+    
+}
+
+
+
+.photo {
+    height: 20rem;
+    max-width: 100%;
+    object-fit: cover;
+}
