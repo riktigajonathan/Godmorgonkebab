@@ -1,5 +1,5 @@
 /* Importerar css koden från gemensamma css filen i parent folder */
-@import url("../style.css");
+@import url("/style.css");
 
 button {
 	font-family: "Carter One", system-ui;
