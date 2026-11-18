@@ -22,7 +22,7 @@ function btnAction(event) {
         const img = document.createElement("img");
 
         img.src = `/assets/images/toppings/${topping}.png`;
-        img.alt = topping.charAt(0).toUpperCase() + topping.slice(1);
+        img.alt = btn.textContent;
         img.id = `layer-${topping}`;
 
         if (topping === "ost") {
