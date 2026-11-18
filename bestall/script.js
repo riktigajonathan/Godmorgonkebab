@@ -41,9 +41,8 @@ function btnAction(event) {
             existingImg.remove();
         }
 
-        // this doesnt work
-        toppings.remove(topping);
+        delete(toppings[topping]);
     }
 
-    document.getElementById("price").textContent = "Pris: " + (Object.keys(toppings).length*8 + 100) + "kr"
+    document.getElementById("price").textContent = "Pris: " + (Object.keys(toppings).length*7 + 89) + "kr"
 }
