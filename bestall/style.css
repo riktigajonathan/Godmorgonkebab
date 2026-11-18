@@ -1,0 +1,154 @@
+/* Importerar css koden från gemensamma css filen i parent folder */
+@import url("../style.css");
+
+button {
+	font-family: "Carter One", system-ui;
+	display: inline-block;
+	padding: 12px 24px;
+	background-image: linear-gradient(to top, var(--blue), var(--lighter-blue));
+	color: white;
+	text-decoration: none;
+	border-radius: 5px;
+	box-shadow: 5px 5px 5px rgb(0 0 0 / 0.45);
+	text-shadow: 2px 2px 0 var(--darker-blue);
+	border: 2px solid var(--lightest-blue);
+	font-size: 1.1rem;
+}
+
+button:hover,
+button:focus {
+	filter: brightness(120%);
+}
+
+button:active {
+	filter: brightness(100%);
+}
+
+h1,
+h2,
+h3 {
+	text-align: center;
+}
+
+h1 {
+	background-color: var(--blue);
+	border-radius: 15px;
+}
+
+h2 {
+	background-color: rgb(0 0 0 / 0.4);
+	border-radius: 15px;
+	padding: 6px 0;
+	font-size: 1.7rem;
+}
+
+.btn {
+	display: inline-block;
+	padding: 12px 24px;
+	background-color: var(--blue);
+	color: white;
+	text-decoration: none;
+	border-radius: 12px;
+	box-shadow: 5px 5px 0 var(--darkest-blue);
+	text-shadow: 2px 2px 0 var(--darkest-blue);
+	text-align: center;
+}
+
+.btn:hover,
+.btn:focus {
+	background-color: var(--darker-blue);
+}
+
+.btn:focus {
+	outline: 5px dotted var(--lightest-blue);
+}
+
+.button-container {
+	display: flex;
+	justify-content: center;
+	gap: 40px;
+}
+
+@media screen and (max-width: 786px) {
+	.button-container {
+		gap: 10px;
+	}
+}
+
+hr {
+	margin-top: 60px;
+}
+
+.pizza-builder {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	gap: 30px;
+	margin-bottom: 20px;
+	margin-top: 40px;
+	justify-content: center;
+	align-items: flex-start;
+}
+
+.topping-column,
+.sauce-column {
+	flex: 1;
+	display: flex;
+	flex-direction: column;
+	gap: 8px;
+}
+
+.topping-column h4,
+.sauce-column h4 {
+	background-color: rgb(0 0 0 / 0.4);
+	border-radius: 15px;
+	padding: 6px 0;
+	text-align: center;
+	margin-bottom: 5px;
+}
+
+.topping-column button,
+.sauce-column button {
+	width: 100%;
+	padding: 10px 12px;
+	font-size: 1rem;
+}
+
+#pizza {
+	flex: 1;
+	min-width: 250px;
+	max-width: 350px;
+	position: relative;
+	aspect-ratio: 1 / 1;
+	border-radius: 50%;
+	margin: 0 auto 60px;
+	order: 1;
+}
+
+#pizza img {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	object-fit: contain;
+	top: 50px;
+	left: 0;
+	pointer-events: none;
+}
+
+@media screen and (max-width: 786px) {
+	.pizza-builder {
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.topping-column,
+	.sauce-column,
+	#pizza {
+		width: 100%;
+		max-width: 400px;
+	}
+}
+
+p {
+    text-align: center;
+}
