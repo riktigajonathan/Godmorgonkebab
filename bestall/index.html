@@ -1,86 +1,93 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>GodmorgonKebab</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="icon" type="image/x-icon" href="../favicon.png">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-</head>
-<body>
+	<head>
+		<meta charset="UTF-8" />
+		<title>GodmorgonKebab</title>
+		<link rel="stylesheet" href="style.css" />
+		<link rel="icon" type="image/x-icon" href="../favicon.png" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	</head>
+	<body>
+		<header>
+			<a href="../" id="logo">GodmorgonKebab Logo</a>
+		</header>
 
-<header>
-    <a href="../" id="logo"></a>
-</header>
+		<nav>
+			<ul>
+				<li>
+					<a href="../">Hem</a>
+					<div class="vl"></div>
+				</li>
 
-<nav>
-    <ul>
-        <li><a href="../">Hem</a>
-            <div class="vl"></div></li>
+				<li>
+					<a href="../meny/">Meny</a>
+					<div class="vl"></div>
+				</li>
 
-        <li><a href="../meny/">Meny</a>
-            <div class="vl"></div></li>
+				<li>
+					<a href="../bestall/" class="active">Beställ</a>
+					<div class="vl"></div>
+				</li>
 
-        <li><a href="../bestall/" class="active">Beställ</a>
-            <div class="vl"></div></li>
+				<li><a href="../om_oss/">Om&nbsp;oss</a></li>
+			</ul>
+		</nav>
 
-        <li><a href="../om_oss/">Om&nbsp;oss</a>
-    </ul>
-</nav>
+		<main>
+			<h1>Tack för att du väljer oss!</h1>
 
-<main>
-    <h1>Tack för att du väljer oss!</h1>
+			<div class="button-container">
+				<a class="btn" href="tel:034010225"> Ring och beställ </a>
+				<a
+					class="btn"
+					href="https://maps.app.goo.gl/Prs6MSkH4iLj1oy38"
+					target="_blank"
+				>
+					Hitta hit
+				</a>
+			</div>
 
-    <div class="button-container">
-        <a class="btn" href="tel:034010225">
-            Ring och beställ
-        </a>
-        <a class="btn" href="https://maps.app.goo.gl/Prs6MSkH4iLj1oy38" target="_blank">
-            Hitta hit
-        </a>
-    </div>
+			<hr />
 
-    <hr>
+			<h2>Välkommen till pizzabyggaren!</h2>
+			<h3>Tryck på knapparna nedan för att skapa din egna pizza.</h3>
 
-    <h2>
-        Välkommen till pizzabyggaren!
-    </h2>
-    <h3>
-        Tryck på knapparna nedan för att skapa din egna pizza.
-    </h3>
+			<section class="pizza-builder">
+				<aside>
+					<h4>Toppings</h4>
+					<button type="button">Ananas</button>
+					<button type="button">Bacon</button>
+					<button type="button">Champinjoner</button>
+					<button type="button">Korv</button>
+					<button type="button">Oliver</button>
+					<button type="button">Ost</button>
+					<button type="button">Paprika</button>
+					<button type="button">Pepperoni</button>
+					<button type="button">Skinka</button>
+					<button type="button">Tomat</button>
+					<h4>Såser</h4>
+					<button type="button">Tomatsås</button>
+					<button type="button">Barbecuesås</button>
+					<button type="button">Vitlökssås</button>
+					<button type="button">Ranchdressing</button>
+					<button type="button">Chilisås</button>
+				</aside>
+				<aside id="pizza">
+					<script src="script.js"></script>
+					<img
+						src="/assets/images/toppings/bas.png"
+						alt="Pizza Base"
+						style="z-index: -2;"
+					/>
+				</aside>
+			</section>
+		</main>
 
-    <section class="pizza-builder">
-        <aside>
-            <h4>Toppings</h4>
-            <button>Ananas</button>
-            <button>Bacon</button>
-            <button>Champinjoner</button>
-            <button>Korv</button>
-            <button>Oliver</button>
-            <button>Ost</button>
-            <button>Paprika</button>
-            <button>Pepperoni</button>
-            <button>Skinka</button>
-            <button>Tomat</button>
-            <h4>Såser</h4>
-            <button>Tomatsås</button>
-            <button>Barbecuesås</button>
-            <button>Vitlökssås</button>
-            <button>Ranchdressing</button>
-            <button>Chilisås</button>
-        </aside>
-        <aside id="pizza">
-            <script src="script.js"></script>
-        </aside>
-    </section>
-</main>
-
-<footer>
-    <div class="footer-background">
-        <address>0340-10225 | Bäckgatan 9, 432 44 Varberg</address>
-        <p>&copy GodmorgonKebab</p>
-    </div>
-</footer>
-
-</body>
+		<footer>
+			<div class="footer-background">
+				<address>0340-10225 | Bäckgatan 9, 432 44 Varberg</address>
+				<p>&copy GodmorgonKebab</p>
+			</div>
+		</footer>
+	</body>
 </html>

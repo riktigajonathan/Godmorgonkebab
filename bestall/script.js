@@ -6,7 +6,13 @@ const toppings = {};
 
 function btnAction(event) {
     const btn = event.target;
-    const topping = btn.innerText.toLowerCase().split(' ')[0].trim();
+    const topping = btn.innerText
+        .toLowerCase()
+        .split(' ')[0]
+        .trim()
+        .replace(/å/g, 'a')
+        .replace(/ä/g, 'a')
+        .replace(/ö/g, 'o')
     
     toppings[topping] = !toppings[topping];
 
@@ -14,8 +20,18 @@ function btnAction(event) {
         btn.style.filter = "brightness(0.5)";
 
         const img = document.createElement("img");
-        img.src = `assets/images/toppings/${topping}.png`;
+
+        img.src = `/assets/images/toppings/${topping}.png`;
+        img.alt = topping.charAt(0).toUpperCase() + topping.slice(1);
         img.id = `layer-${topping}`;
+
+        if (topping === "ost") {
+            img.style.zIndex = -1;
+        } 
+        else if (topping.endsWith("sas") || topping.endsWith("dressing")) {
+            img.style.zIndex = 2;
+        }
+
         document.getElementById("pizza").appendChild(img);
     } else {
         btn.style.filter = "brightness(1)";

@@ -78,6 +78,7 @@ header {
     max-width: 21em;
     background-repeat: no-repeat;
     background-position: center;
+    text-indent: -9999px; 
 }
 
 footer {
