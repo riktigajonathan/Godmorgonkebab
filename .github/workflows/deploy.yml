@@ -21,12 +21,24 @@ jobs:
 
       - name: Rewrite root paths for GitHub Pages
         run: |
-          ROOT_ITEMS=$(ls -1 | grep -v '^\.' | sed 's/\./\\./g' | paste -sd '|' -)
-          find . -type f \( -name "*.html" -o -name "*.css" -o -name "*.js" \) -not -path '*/.*' -exec sed -i -E \
-            -e "s|([\"'\(])/($ROOT_ITEMS)|\1/Godmorgonkebab/\2|g" \
-            -e 's|href="/"|href="/Godmorgonkebab/"|g' \
-            -e "s|href='/'|href='/Godmorgonkebab/'|g" {} +
-        
+          python3 -c '
+          import os, re, glob
+
+          root_items = [re.escape(x) for x in os.listdir(".") if not x.startswith(".")]
+          pattern = re.compile(r"([\"\x27\(])/(" + "|".join(root_items) + r")")
+
+          for ext in ("**/*.html", "**/*.css", "**/*.js"):
+              for path in glob.glob(ext, recursive=True):
+                  with open(path, "r", encoding="utf-8") as f:
+                      content = f.read()
+                  updated = pattern.sub(r"\1/Godmorgonkebab/\2", content)
+                  updated = updated.replace("href=\"/\"", "href=\"/Godmorgonkebab/\"")
+                  updated = updated.replace("href=\x27/\x27", "href=\x27/Godmorgonkebab/\x27")
+                  if updated != content:
+                      with open(path, "w", encoding="utf-8") as f:
+                          f.write(updated)
+          '
+
       - name: Setup Pages
         uses: actions/configure-pages@v5
 
