@@ -21,11 +21,12 @@ jobs:
 
       - name: Rewrite root paths for GitHub Pages
         run: |
+          ROOT_ITEMS=$(ls -1 | grep -v '^\.' | sed 's/\./\\./g' | paste -sd '|' -)
           find . -type f \( -name "*.html" -o -name "*.css" -o -name "*.js" \) -not -path '*/.*' -exec sed -i -E \
-            -e 's|(["'\''\(])/(assets\|meny\|bestall\|om-oss\|startsida)|\1/Godmorgonkebab/\2|g' \
+            -e "s|([\"'\(])/($ROOT_ITEMS)|\1/Godmorgonkebab/\2|g" \
             -e 's|href="/"|href="/Godmorgonkebab/"|g' \
             -e "s|href='/'|href='/Godmorgonkebab/'|g" {} +
-
+        
       - name: Setup Pages
         uses: actions/configure-pages@v5
 
