@@ -25,7 +25,7 @@ jobs:
           import os, re, glob
 
           root_items = [re.escape(x) for x in os.listdir(".") if not x.startswith(".")]
-          pattern = re.compile(r"([\"\x27\(])/(" + "|".join(root_items) + r")")
+          pattern = re.compile(r"([\"\x27\x60\(])/(" + "|".join(root_items) + r")")
 
           for ext in ("**/*.html", "**/*.css", "**/*.js"):
               for path in glob.glob(ext, recursive=True):
