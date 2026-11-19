@@ -90,6 +90,14 @@ hr {
 	align-items: flex-start;
 }
 
+.topping-column {
+	order: 1;
+}
+
+.sauce-column {
+	order: 3;
+}
+
 .topping-column,
 .sauce-column {
 	flex: 1;
@@ -119,12 +127,12 @@ hr {
 #pizza {
 	flex: 1;
 	min-width: 250px;
-	max-width: 350px;
+	max-width: 400px;
 	position: relative;
 	aspect-ratio: 1 / 1;
 	border-radius: 50%;
 	margin: 0 auto 60px;
-	order: 1;
+	order: 2;
 }
 
 #pizza img {
@@ -147,7 +155,11 @@ hr {
 	.sauce-column,
 	#pizza {
 		width: 100%;
-		max-width: 400px;
+		max-width: 268px;
+	}
+
+	#pizza {
+		order: -1;
 	}
 }
 
