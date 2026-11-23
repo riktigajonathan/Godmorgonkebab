@@ -1,6 +1,7 @@
 /* Importerar css koden från gemensamma css filen i parent folder */
 @import url("/style.css");
 
+/* GJORD AV JONATHAN */
 main {
 	display: flex;
 	flex-wrap: wrap;

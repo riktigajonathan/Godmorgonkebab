@@ -1,3 +1,5 @@
+// GJORD AV JONATHAN
+
 document.querySelectorAll("button").forEach((button) => {
 	button.addEventListener("click", btnAction);
 });
