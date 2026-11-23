@@ -23,7 +23,7 @@ function btnAction(event) {
 
 		const img = document.createElement("img");
 
-		img.src = `/assets/images/toppings/${topping}.png`;
+		img.src = `/assets/images/toppings/${topping}.webp`;
 		img.alt = btn.textContent;
 		img.id = `layer-${topping}`;
 
