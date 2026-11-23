@@ -31,7 +31,13 @@ function btnAction(event) {
 
 		if (topping === "ost") {
 			img.style.zIndex = -1;
-		} else if (topping.endsWith("sas") || topping.endsWith("dressing")) {
+		} else if (
+			topping.endsWith("sas") ||
+			topping.endsWith("dressing") ||
+			topping === "mild" ||
+			topping === "stark" ||
+			topping === "mixad"
+		) {
 			img.style.zIndex = 2;
 		}
 
