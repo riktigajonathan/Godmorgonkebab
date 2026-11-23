@@ -13,6 +13,11 @@ h1 {
 	text-align: center;
 }
 
+hr {
+	width: 80%;
+	margin-bottom: 2rem;
+}
+
 details {
 	background-color: rgba(0, 0, 0, 0.4);
 	width: 100%;
@@ -55,6 +60,7 @@ summary {
 	display: flex;
 	flex-direction: column;
 	background-color: black;
+	transition: transform var(--animation-time) ease-in-out;
 }
 .pizza-image {
 	width: 100%;
