@@ -44,5 +44,5 @@ function btnAction(event) {
 	}
 
 	document.getElementById("price").textContent =
-		`Pris: ${(Object.keys(toppings).length * 7 + 89)} kr`;
+		`Pris: ${Object.keys(toppings).length * 7 + 89} kr`;
 }
