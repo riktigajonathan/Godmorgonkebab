@@ -60,6 +60,10 @@ hr {
 	gap: 20px;
 }
 
+#butiken h2 {
+	text-shadow: 2px 2px 0 var(--darkest-red);
+}
+
 #butiken-columns {
 	margin-bottom: 20px;
 	display: grid;
