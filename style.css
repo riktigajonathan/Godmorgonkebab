@@ -38,7 +38,7 @@
 }
 
 body {
-	background-image: url("/assets/images/bricks.jpg");
+	background-image: url("/assets/images/bricks.webp");
 	background-size: cover;
 	background-attachment: fixed;
 	background-color: #bf694d;
@@ -54,7 +54,7 @@ body {
 }
 
 header {
-	background-image: url("/assets/images/roof.jpg");
+	background-image: url("/assets/images/roof.webp");
 	background-color: #ffdab0;
 	box-shadow: var(--default-shadow);
 	background-position: center bottom;
@@ -68,7 +68,7 @@ header {
 #logo {
 	padding: 10.5em 2em;
 	margin: 0.5em auto;
-	background-image: url("/assets/images/logo_placeholder.png");
+	background-image: url("/assets/images/logo_placeholder.webp");
 	background-size: contain;
 	display: block;
 	max-width: 21em;
@@ -78,7 +78,7 @@ header {
 }
 
 footer {
-	background-image: url("/assets/images/facade.jpg");
+	background-image: url("/assets/images/facade.webp");
 	background-color: #8c8c8c;
 	box-shadow: var(--default-shadow);
 	padding: 1.7em;
@@ -106,7 +106,7 @@ footer p {
 }
 
 main {
-	background-image: url("/assets/images/floor.jpg");
+	background-image: url("/assets/images/floor.webp");
 	background-size: cover;
 	background-attachment: fixed;
 	background-position: center bottom;
