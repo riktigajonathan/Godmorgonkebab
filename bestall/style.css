@@ -146,6 +146,12 @@ hr {
 	pointer-events: none;
 }
 
+.centered {
+	display: flex;
+	justify-content: center;
+	margin-bottom: 40px;
+}
+
 @media screen and (max-width: 786px) {
 	.pizza-builder {
 		flex-direction: column;
