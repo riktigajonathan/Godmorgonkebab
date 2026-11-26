@@ -6,4 +6,4 @@ We are a company that sells pizzas, kebabs, salad and drinks. Our main product i
 
 ## Job Description
 
-You must create a website that will mainly make it easy to contact the company. Besides the landing page, the website will need a contact page, menu page and a terms of service page. The young adults would prefer an easy to use, and charming design. We would like you to use the brand color, which is light red, but also include playful colors.
+You must create a website that will mainly make it easy to contact the company. Besides the landing page, the website will need a contact page, menu page and an about page. The young adults would prefer an easy to use, and charming design. We would like you to use the brand color, which is light red, but also include playful colors.
